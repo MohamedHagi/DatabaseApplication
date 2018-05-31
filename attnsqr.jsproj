@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>d6448887-22e0-4c4c-9fbe-cfc4a74ff9cf</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '15.0'">
+    <VisualStudioVersion>15.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.17134.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.15063.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>$(VersionNumberMajor).$(VersionNumberMinor)</MinimumVisualStudioVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <PackageCertificateKeyFile>attnsqr_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="about.html" />
+    <Content Include="animate.css" />
+    <Content Include="animsition.min.css" />
+    <Content Include="animsition.min.js" />
+    <Content Include="blog-detail.html" />
+    <Content Include="blog.html" />
+    <Content Include="bootstrap.min.css" />
+    <Content Include="bootstrap.min.js" />
+    <Content Include="contact.html" />
+    <Content Include="daterangepicker.css" />
+    <Content Include="daterangepicker.js" />
+    <Content Include="font-awesome.min.css" />
+    <Content Include="hamburgers.min.css" />
+    <Content Include="home-02.html" />
+    <Content Include="home-03.html" />
+    <Content Include="icon-font.min.css" />
+    <Content Include="images\about-01.jpg" />
+    <Content Include="images\about-02.jpg" />
+    <Content Include="images\avatar-01.jpg" />
+    <Content Include="images\banner-01.jpg" />
+    <Content Include="images\banner-02.jpg" />
+    <Content Include="images\banner-03.jpg" />
+    <Content Include="images\banner-04.jpg" />
+    <Content Include="images\banner-05.jpg" />
+    <Content Include="images\banner-06.jpg" />
+    <Content Include="images\banner-07.jpg" />
+    <Content Include="images\banner-08.jpg" />
+    <Content Include="images\banner-09.jpg" />
+    <Content Include="images\bg-01.jpg" />
+    <Content Include="images\bg-02.jpg" />
+    <Content Include="images\blog-01.jpg" />
+    <Content Include="images\blog-02.jpg" />
+    <Content Include="images\blog-03.jpg" />
+    <Content Include="images\blog-04.jpg" />
+    <Content Include="images\blog-05.jpg" />
+    <Content Include="images\blog-06.jpg" />
+    <Content Include="images\favicon.png" />
+    <Content Include="attnsqr.html" />
+    <Content Include="images\gallery-01.jpg" />
+    <Content Include="images\gallery-02.jpg" />
+    <Content Include="images\gallery-03.jpg" />
+    <Content Include="images\gallery-04.jpg" />
+    <Content Include="images\gallery-05.jpg" />
+    <Content Include="images\gallery-06.jpg" />
+    <Content Include="images\gallery-07.jpg" />
+    <Content Include="images\gallery-08.jpg" />
+    <Content Include="images\gallery-09.jpg" />
+    <Content Include="images\icon-close.png" />
+    <Content Include="images\icon-close2.png" />
+    <Content Include="images\icon-email.png" />
+    <Content Include="images\icon-heart-01.png" />
+    <Content Include="images\icon-heart-02.png" />
+    <Content Include="images\icon-next.png" />
+    <Content Include="images\icon-pay-01.png" />
+    <Content Include="images\icon-pay-02.png" />
+    <Content Include="images\icon-pay-03.png" />
+    <Content Include="images\icon-pay-04.png" />
+    <Content Include="images\icon-pay-05.png" />
+    <Content Include="images\icon-prev.png" />
+    <Content Include="images\icons\favicon.png" />
+    <Content Include="images\icons\icon-close.png" />
+    <Content Include="images\icons\icon-close2.png" />
+    <Content Include="images\icons\icon-email.png" />
+    <Content Include="images\icons\icon-heart-01.png" />
+    <Content Include="images\icons\icon-heart-02.png" />
+    <Content Include="images\icons\icon-next.png" />
+    <Content Include="images\icons\icon-pay-01.png" />
+    <Content Include="images\icons\icon-pay-02.png" />
+    <Content Include="images\icons\icon-pay-03.png" />
+    <Content Include="images\icons\icon-pay-04.png" />
+    <Content Include="images\icons\icon-pay-05.png" />
+    <Content Include="images\icons\icon-prev.png" />
+    <Content Include="images\icons\logo-01.png" />
+    <Content Include="images\icons\logo-02.png" />
+    <Content Include="images\icons\pin.png" />
+    <Content Include="images\item-cart-01.jpg" />
+    <Content Include="images\item-cart-02.jpg" />
+    <Content Include="images\item-cart-03.jpg" />
+    <Content Include="images\item-cart-04.jpg" />
+    <Content Include="images\item-cart-05.jpg" />
+    <Content Include="images\logo-01.png" />
+    <Content Include="images\logo-02.png" />
+    <Content Include="images\pin.png" />
+    <Content Include="images\product-01.jpg" />
+    <Content Include="images\product-02.jpg" />
+    <Content Include="images\product-03.jpg" />
+    <Content Include="images\product-04.jpg" />
+    <Content Include="images\product-05.jpg" />
+    <Content Include="images\product-06.jpg" />
+    <Content Include="images\product-07.jpg" />
+    <Content Include="images\product-08.jpg" />
+    <Content Include="images\product-09.jpg" />
+    <Content Include="images\product-10.jpg" />
+    <Content Include="images\product-11.jpg" />
+    <Content Include="images\product-12.jpg" />
+    <Content Include="images\product-13.jpg" />
+    <Content Include="images\product-14.jpg" />
+    <Content Include="images\product-15.jpg" />
+    <Content Include="images\product-16.jpg" />
+    <Content Include="images\product-detail-01.jpg" />
+    <Content Include="images\product-detail-02.jpg" />
+    <Content Include="images\product-detail-03.jpg" />
+    <Content Include="images\product-min-01.jpg" />
+    <Content Include="images\product-min-02.jpg" />
+    <Content Include="images\product-min-03.jpg" />
+    <Content Include="images\slide-01.jpg" />
+    <Content Include="images\slide-02.jpg" />
+    <Content Include="images\slide-03.jpg" />
+    <Content Include="images\slide-04.jpg" />
+    <Content Include="images\slide-05.jpg" />
+    <Content Include="images\slide-06.jpg" />
+    <Content Include="images\slide-07.jpg" />
+    <Content Include="images\thumb-01.jpg" />
+    <Content Include="images\thumb-02.jpg" />
+    <Content Include="images\thumb-03.jpg" />
+    <Content Include="isotope.pkgd.min.js" />
+    <Content Include="jquery-3.2.1.min.js" />
+    <Content Include="jquery.magnific-popup.min.js" />
+    <Content Include="magnific-popup.css" />
+    <Content Include="main.css" />
+    <Content Include="main.js" />
+    <Content Include="material-design-iconic-font.min.css" />
+    <Content Include="moment.min.js" />
+    <Content Include="msapp-error.js" />
+    <Content Include="msapp-error.css" />
+    <Content Include="msapp-error.html" />
+    <Content Include="images\LockScreenLogo.scale-200.png" />
+    <Content Include="images\SplashScreen.scale-200.png" />
+    <Content Include="images\Square150x150Logo.scale-200.png" />
+    <Content Include="images\Square44x44Logo.scale-200.png" />
+    <Content Include="images\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="images\StoreLogo.png" />
+    <Content Include="images\Wide310x150Logo.scale-200.png" />
+    <Content Include="parallax100.js" />
+    <Content Include="perfect-scrollbar.css" />
+    <Content Include="perfect-scrollbar.min.js" />
+    <Content Include="popper.js" />
+    <Content Include="product-detail.html" />
+    <Content Include="product.html" />
+    <Content Include="select2.min.css" />
+    <Content Include="select2.min.js" />
+    <Content Include="shoping-cart.html" />
+    <Content Include="slick-custom.js" />
+    <Content Include="slick.css" />
+    <Content Include="slick.min.js" />
+    <Content Include="store.zip" />
+    <Content Include="sweetalert.min.js" />
+    <Content Include="util.css" />
+    <None Include="attnsqr_TemporaryKey.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>
